@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   height: 500px;
+   width: 300px;
+   background-color:rgb(224, 144, 144);
+   border: 1px solid green;
+   border-radius: 20px;
+  overflow-y: hidden;
+   gap: 30px;
+   padding-bottom: 20px;
+   
+
+}
+.heading{
+    border: 1px inset black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255,255, 255, 0.2);
+    animation-name: colorChange;
+    animation-duration: 10s;
+}
+.inputBox{
+    animation-name: colorChange;
+    animation-duration: 10s;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.addBtn{
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.itemList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.itemList li{
+    color: white;
+}
+.ri-close-circle-fill{
+    padding-left: 15px;
+    color: black;
+}
+@keyframes colorChange {
+
+    0% {
+        border-color: green;
+        color: green;
+    }
+
+    10% {
+        border-color: yellow;
+        color: yellow;
+
+    }
+    30% {
+        border-color: red;
+        color: red;
+    }
+
+    40% {
+        border-color: purple;
+        color: purple;
+    }
+
+    50% {
+        border-color:pink;
+        color: rgb(255, 0, 81);
+
+    }
+
+    60% {
+        border-color: cyan;
+        color: cyan;
+    }
+
+    70% {
+        border-color: skyblue;
+        color: skyblue;
+    }
+
+    80% {
+        border-color: pink;
+        color: pink;
+    }
+
+    90% {
+        border-color: red;
+        color: red;
+    }
+
+    100% {
+        border-color: yellow;
+        color: yellow;
+    }
+}
